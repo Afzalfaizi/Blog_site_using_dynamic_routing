@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import NavBar from './(components)/NavBar/page'
-import MyProfilePic from './(components)/MyProfilePic/page'
-import Footer from './(components)/footer/page'
+import NavBar from './(components)/NavBar/Navbar'
+import MyProfilePic from './(components)/MyProfilePic/MyProfilePic'
+import Footer from './(components)/footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,8 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="dark:bg-slate-800">
-        <NavBar />
-        <MyProfilePic></MyProfilePic>
+        <NavBar/>
+        <MyProfilePic/>
         {children}
         <Footer/>
       </body>
